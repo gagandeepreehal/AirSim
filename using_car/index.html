@@ -129,6 +129,10 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../playback/">Playing Logs</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../voxel_grid/">Voxel Grid Generator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../event_sim/">Event camera</a>
+                    </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Design</span></p>
                 <ul>
@@ -152,6 +156,8 @@
                 <li class="toctree-l2"><a class="reference internal" href="../px4_setup/">PX4 Setup for AirSim</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../px4_sitl/">PX4 in SITL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../px4_multi_vehicle/">PX4 Multi-vehicle in SITL</a>
                 </li>
                 <li class="toctree-l2"><a class="" href="https://youtu.be/1oY8Qu5maQQ">AirSim with Pixhawk</a>
                 </li>
@@ -287,12 +293,10 @@
               
                 <h1 id="how-to-use-car-in-airsim">How to Use Car in AirSim<a class="headerlink" href="#how-to-use-car-in-airsim" title="Permanent link">#</a></h1>
 <p>By default AirSim prompts user for which vehicle to use. You can easily change this by setting <a href="../settings/#SimMode">SimMode</a>. For example, if you want to use car instead then just set the SimMode in your <a href="../settings/">settings.json</a> which you can find in your <code>~/Documents/AirSim</code> folder, like this:</p>
-<div class="highlight"><pre><span></span><code>{
-  &quot;SettingsVersion&quot;: 1.2,
-  &quot;SimMode&quot;: &quot;Car&quot;
-}
-</code></pre></div>
-
+<pre class="highlight"><code>{
+  "SettingsVersion": 1.2,
+  "SimMode": "Car"
+}</code></pre>
 <p>Now when you restart AirSim, you should see the car spawned automatically.</p>
 <h2 id="manual-driving">Manual Driving<a class="headerlink" href="#manual-driving" title="Permanent link">#</a></h2>
 <p>Please use the keyboard arrow keys to drive manually. Spacebar for the handbrake. In manual drive mode, gears are set in "auto".</p>
@@ -351,6 +355,9 @@
 </div>
     <script>var base_url = '..';</script>
     <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/config.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
       <script src="../search/main.js" defer></script>
     <script defer>
         window.onload = function () {
